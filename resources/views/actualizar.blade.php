@@ -31,10 +31,12 @@
             <label for="">Edad</label>
             <input type="text" name="Edad" class="form-control" required value="{{ $alumno->Edad }}">
             <br>
-
-            <a href="{{ route("alumnos.index") }}" class="btn btn-info">
-                <span class="fas fa-undo-alt"></span> Regresar</a>
-            <button class="btn btn-primary">Actualizar</button>
+            <a href="{{ route("alumnos.index") }}" class="btn btn-info" >
+                <span class="fas fa-undo-alt"></span> Regresar
+            </a>
+            <button class="btn btn-warning">
+                <span class="fas fa-user-edit"></span> Actualizar
+            </button>
         </form>
         </p>
 

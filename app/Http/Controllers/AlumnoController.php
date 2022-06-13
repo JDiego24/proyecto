@@ -105,7 +105,7 @@ class AlumnoController extends Controller
         $alumno-> Edad = $request->post("Edad");
         $alumno->save();
 
-        return redirect()->route("alumnos.index")->with("success","Actulizado con exito");
+        return redirect()->route("alumnos.index")->with("success","Actualizado con exito");
         
     }
 
