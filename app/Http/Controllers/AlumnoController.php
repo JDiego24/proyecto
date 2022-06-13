@@ -41,6 +41,20 @@ class AlumnoController extends Controller
     public function store(Request $request)
     {
         //sirve paara guardar datos en la base de datos
+        $alumno = new Alumno();
+        $alumno-> Nombre = $request->post("Nombre"); 
+        $alumno-> Apellido_P = $request->post("Apellido_P");
+        $alumno-> Apellido_M = $request->post("Apellido_M");
+        $alumno-> Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
+        $alumno-> Telefono = $request->post("Telefono");
+        $alumno-> Matricula = $request->post("Matricula");
+        $alumno-> Correo_Electronico = $request->post("Correo_Electronico");
+        $alumno-> CURP = $request->post("Curp");
+        $alumno-> NSS = $request->post("NSS");
+        $alumno-> Edad = $request->post("Edad");
+        $alumno->save();
+
+        return redirect()->route("alumnos.index")->with("success","Agregado con exito");
     }
 
     /**
@@ -61,10 +75,11 @@ class AlumnoController extends Controller
      * @param  \App\Models\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function edit(Alumno $alumno)
+    public function edit($id)
     {
         //sirve para traer datos que se van a editar y los coloca en un formulario
-        return view("actualizar");
+        $alumno = Alumno::find($id);
+        return view("actualizar", compact("alumno"));
     }
 
     /**
@@ -74,9 +89,24 @@ class AlumnoController extends Controller
      * @param  \App\Models\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Alumno $alumno)
+    public function update(Request $request, $id)
     {
         //actualiza los datos en la base 
+        $alumno = Alumno::find($id);
+        $alumno-> Nombre = $request->post("Nombre"); 
+        $alumno-> Apellido_P = $request->post("Apellido_P");
+        $alumno-> Apellido_M = $request->post("Apellido_M");
+        $alumno-> Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
+        $alumno-> Telefono = $request->post("Telefono");
+        $alumno-> Matricula = $request->post("Matricula");
+        $alumno-> Correo_Electronico = $request->post("Correo_Electronico");
+        $alumno-> CURP = $request->post("Curp");
+        $alumno-> NSS = $request->post("NSS");
+        $alumno-> Edad = $request->post("Edad");
+        $alumno->save();
+
+        return redirect()->route("alumnos.index")->with("success","Actulizado con exito");
+        
     }
 
     /**

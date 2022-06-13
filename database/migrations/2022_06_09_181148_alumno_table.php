@@ -19,11 +19,11 @@ class AlumnoTable extends Migration
             $table->string('Apellido_M');
             $table->string('Apellido_P');
             $table->date('Fecha_Nacimiento');
-            $table->integer('Telefono');
+            $table->float('Telefono');
             $table->string('Matricula');
             $table->string('Correo electronico');
             $table->string('Curp');
-            $table->integer('NSS');
+            $table->float('NSS');
             $table->integer('Edad');
             $table->timestamps();
         });    

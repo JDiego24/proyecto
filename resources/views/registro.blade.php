@@ -7,6 +7,14 @@
 <div class="card">
     <h5 class="card-header">Registro de alumnos</h5>
     <div class="card-body">
+        <div class="row">
+            <div class="col-sm-12">
+                @if ($mensaje= Session::get("success"))
+                <div class="alert alert-success" role="alert"></div> 
+                {{ $mensaje }}
+                @endif
+            </div>
+        </div>
         <h5 class="card-title text-center">Listado de alumnos en el sistema</h5>
         <p>
             <a href="{{ route("alumnos.create") }}" class="btn btn-primary">
@@ -44,9 +52,11 @@
                         <td>{{ $item->NSS }}</td>
                         <td>{{ $item->Edad }}</td>
                         <td>
-                            <button class="btn btn-warning btn-sm">
-                                <span class="fas fa-user-edit"></span>
-                            </button>
+                            <form action="{{ route("alumnos.edit", $item->id) }}" method="GET">
+                                <button class="btn btn-warning btn-sm">
+                                    <span class="fas fa-user-edit"></span>
+                                </button>
+                            </form>
                         </td>
                         <td>
                             <button class="btn btn-danger btn-sm">

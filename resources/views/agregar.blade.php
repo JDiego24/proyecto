@@ -7,13 +7,14 @@
     <h5 class="card-header">Registro de alumno</h5>
     <div class="card-body">
         <p class="card-text">
-        <form action="#">
+        <form action="{{ route("alumnos.store") }}" method="POST">
+            @csrf
             <label for="">Nombre</label>
             <input type="text" name="Nombre" class="form-control" required>
             <label for="">Apellido Paterno</label>
             <input type="text" name="Apellido_P" class="form-control" required>
             <label for="">Apellido Materno</label>
-            <input type="text" name="Apellido_P" class="form-control" required>
+            <input type="text" name="Apellido_M" class="form-control" required>
             <label for="">Fecha de nacimiento</label>
             <input type="date" name="Fecha_Nacimiento" class="form-control" required>
             <label for="">Telefono</label>

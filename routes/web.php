@@ -20,5 +20,7 @@ return view('index');
 });
 Route::get('/registro',[AlumnoController::class,'index'])->name('alumnos.index');
 Route::get('/create',[AlumnoController::class,'create'])->name('alumnos.create');
-Route::get('/edit',[AlumnoController::class,'edit'])->name('alumnos.edit');
+Route::get('/edit/{id}',[AlumnoController::class,'edit'])->name('alumnos.edit');
 Route::get('/show',[AlumnoController::class,'show'])->name('alumnos.show');
+Route::post('/store',[AlumnoController::class,'store'])->name('alumnos.store');
+Route::put('/update/{id}',[AlumnoController::class,'update'])->name('alumnos.update');

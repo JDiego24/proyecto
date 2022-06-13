@@ -8,7 +8,7 @@
     <div class="card-body">
         <p class="card-text">
         <div class="alert alert-danger" role="alert">
-            Estas seguro de eliminar este registro
+            ¿Quiere eliminar este registro?
             <table class="table table-sm table-hover">
                 <thead>
                     <th>Nombre</th>
@@ -31,9 +31,11 @@
             </table>
             <hr>
             <form action="">
-                <a href="{{ route("alumnos.index") }}" class="btn btn-info">
+                <a href="{{ route(" alumnos.index") }}" class="btn btn-info">
                     <span class="fas fa-undo-alt"></span> Regresar</a>
-                <button class="btn btn-danger">Eliminar</button>
+                <button class="btn btn-danger">
+                    <span class="fas fa-user-times"></span> Eliminar
+                </button>
             </form>
         </div>
         </p>
