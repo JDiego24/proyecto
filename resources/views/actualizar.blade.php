@@ -4,7 +4,7 @@
 
 @section('contenido')
 <div class="card">
-    <h5 class="card-header">Registro de alumno</h5>
+    <h5 class="card-header">Actualizar alumno</h5>
     <div class="card-body">
         <p class="card-text">
         <form action="#">
@@ -29,12 +29,10 @@
             <label for="">Edad</label>
             <input type="text" name="Edad" class="form-control" required>
             <br>
+
             <a href="{{ route("alumnos.index") }}" class="btn btn-info">
-                <span class="fas fa-undo-alt"></span> Regresar
-            </a>
-            <button class="btn btn-primary">
-                <span class="fas fa-user-plus"></span> Agregar
-            </button>
+                <span class="fas fa-undo-alt"></span> Regresar</a>
+            <button class="btn btn-primary">Actualizar</button>
         </form>
         </p>
 

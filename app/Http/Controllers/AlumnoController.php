@@ -52,6 +52,7 @@ class AlumnoController extends Controller
     public function show(Alumno $alumno)
     {
         //Sirve para obtener un solo registro de la tabla
+        return view("eliminar");
     }
 
     /**
@@ -63,7 +64,7 @@ class AlumnoController extends Controller
     public function edit(Alumno $alumno)
     {
         //sirve para traer datos que se van a editar y los coloca en un formulario
-        return"aqui se edita";
+        return view("actualizar");
     }
 
     /**

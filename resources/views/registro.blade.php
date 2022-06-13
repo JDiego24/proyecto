@@ -9,7 +9,8 @@
     <div class="card-body">
         <h5 class="card-title text-center">Listado de alumnos en el sistema</h5>
         <p>
-            <a href="{{ route("alumnos.create") }}" class="btn btn-primary">Agregar nuevo alumno</a>
+            <a href="{{ route("alumnos.create") }}" class="btn btn-primary">
+                <span class="fas fa-user-plus"></span> Agregar nuevo alumno</a>
         </p>
         <hr>
         <p class="card-text"></p>
@@ -42,17 +43,21 @@
                         <td>{{ $item->Curp }}</td>
                         <td>{{ $item->NSS }}</td>
                         <td>{{ $item->Edad }}</td>
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <button class="btn btn-warning btn-sm">
+                                <span class="fas fa-user-edit"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger btn-sm">
+                                <span class="fas fa-user-times"></span>
+                            </button>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-</div>
-<div class="row">
-    <h1>Hola</h1>
-    <a href="{{ route('alumnos.create') }}">Agregar</a>
 </div>
 @endsection
