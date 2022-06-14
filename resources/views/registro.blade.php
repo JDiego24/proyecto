@@ -8,10 +8,9 @@
     <h5 class="card-header">Registro de alumnos</h5>
     <div class="card-body">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 text-center">
                 @if ($mensaje= Session::get("success"))
-                <div class="alert alert-success" role="alert"></div> 
-                {{ $mensaje }}
+                <div class="alert alert-success" role="alert"> {{ $mensaje }}</div>
                 @endif
             </div>
         </div>
@@ -39,7 +38,7 @@
                     <th>Eliminar</th>
                 </thead>
                 <tbody>
-                    @foreach ($datos as $item)           
+                    @foreach ($datos as $item)
                     <tr>
                         <td>{{ $item->Nombre }}</td>
                         <td>{{ $item->Apellido_P }}</td>
@@ -59,9 +58,11 @@
                             </form>
                         </td>
                         <td>
-                            <button class="btn btn-danger btn-sm">
-                                <span class="fas fa-user-times"></span>
-                            </button>
+                            <form action="{{ route("alumnos.show", $item->id) }}" method="GET">
+                                <button class="btn btn-danger btn-sm">
+                                    <span class="fas fa-user-times"></span>
+                                </button>
+                            </form>
                         </td>
                     </tr>
                     @endforeach

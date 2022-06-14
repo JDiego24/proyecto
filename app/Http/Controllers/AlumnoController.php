@@ -16,8 +16,7 @@ class AlumnoController extends Controller
     {
         //pagina de inicio
         $datos = Alumno::all();
-        return view('registro',compact('datos'));
-       
+        return view('registro', compact('datos'));
     }
 
     /**
@@ -29,7 +28,6 @@ class AlumnoController extends Controller
     {
         //el formulario donde nosotros agregamos datos
         return view('agregar');
-
     }
 
     /**
@@ -42,19 +40,19 @@ class AlumnoController extends Controller
     {
         //sirve paara guardar datos en la base de datos
         $alumno = new Alumno();
-        $alumno-> Nombre = $request->post("Nombre"); 
-        $alumno-> Apellido_P = $request->post("Apellido_P");
-        $alumno-> Apellido_M = $request->post("Apellido_M");
-        $alumno-> Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
-        $alumno-> Telefono = $request->post("Telefono");
-        $alumno-> Matricula = $request->post("Matricula");
-        $alumno-> Correo_Electronico = $request->post("Correo_Electronico");
-        $alumno-> CURP = $request->post("Curp");
-        $alumno-> NSS = $request->post("NSS");
-        $alumno-> Edad = $request->post("Edad");
+        $alumno->Nombre = $request->post("Nombre");
+        $alumno->Apellido_P = $request->post("Apellido_P");
+        $alumno->Apellido_M = $request->post("Apellido_M");
+        $alumno->Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
+        $alumno->Telefono = $request->post("Telefono");
+        $alumno->Matricula = $request->post("Matricula");
+        $alumno->Correo_Electronico = $request->post("Correo_Electronico");
+        $alumno->CURP = $request->post("Curp");
+        $alumno->NSS = $request->post("NSS");
+        $alumno->Edad = $request->post("Edad");
         $alumno->save();
 
-        return redirect()->route("alumnos.index")->with("success","Agregado con exito");
+        return redirect()->route("alumnos.index")->with("success", "Agregado con exito");
     }
 
     /**
@@ -63,10 +61,12 @@ class AlumnoController extends Controller
      * @param  \App\Models\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function show(Alumno $alumno)
+    public function show($id)
     {
         //Sirve para obtener un solo registro de la tabla
-        return view("eliminar");
+        $alumno = Alumno::find($id);
+        return view("eliminar", compact("alumno"));
+        
     }
 
     /**
@@ -93,20 +93,19 @@ class AlumnoController extends Controller
     {
         //actualiza los datos en la base 
         $alumno = Alumno::find($id);
-        $alumno-> Nombre = $request->post("Nombre"); 
-        $alumno-> Apellido_P = $request->post("Apellido_P");
-        $alumno-> Apellido_M = $request->post("Apellido_M");
-        $alumno-> Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
-        $alumno-> Telefono = $request->post("Telefono");
-        $alumno-> Matricula = $request->post("Matricula");
-        $alumno-> Correo_Electronico = $request->post("Correo_Electronico");
-        $alumno-> CURP = $request->post("Curp");
-        $alumno-> NSS = $request->post("NSS");
-        $alumno-> Edad = $request->post("Edad");
+        $alumno->Nombre = $request->post("Nombre");
+        $alumno->Apellido_P = $request->post("Apellido_P");
+        $alumno->Apellido_M = $request->post("Apellido_M");
+        $alumno->Fecha_Nacimiento = $request->post("Fecha_Nacimiento");
+        $alumno->Telefono = $request->post("Telefono");
+        $alumno->Matricula = $request->post("Matricula");
+        $alumno->Correo_Electronico = $request->post("Correo_Electronico");
+        $alumno->CURP = $request->post("Curp");
+        $alumno->NSS = $request->post("NSS");
+        $alumno->Edad = $request->post("Edad");
         $alumno->save();
 
-        return redirect()->route("alumnos.index")->with("success","Actualizado con exito");
-        
+        return redirect()->route("alumnos.index")->with("success", "Actualizado con exito");
     }
 
     /**
@@ -115,8 +114,11 @@ class AlumnoController extends Controller
      * @param  \App\Models\Alumno  $alumno
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Alumno $alumno)
+    public function destroy($id)
     {
         //elimina el registro y muestra lo que eliminará
+        $alumno = Alumno::find($id);
+        $alumno->delete();
+        return redirect()->route("alumnos.index")->with("success", "Eliminado con exito");
     }
 }
