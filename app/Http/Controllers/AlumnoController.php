@@ -15,7 +15,7 @@ class AlumnoController extends Controller
     public function index()
     {
         //pagina de inicio
-        $datos = Alumno::all();
+        $datos = Alumno:: orderBy('id','asc')->paginate(10);
         return view('registro', compact('datos'));
     }
 

@@ -20,7 +20,7 @@
                 <span class="fas fa-user-plus"></span> Agregar nuevo alumno</a>
         </p>
         <hr>
-        <p class="card-text"></p>
+        <p class="card-text">
         <div class="table table-responsive">
             <table class="table table-sm table-bordered">
                 <thead>
@@ -67,8 +67,18 @@
                     </tr>
                     @endforeach
                 </tbody>
+                </tbody>
             </table>
+            <hr>
+
         </div>
+        <div class="row">
+            <div class="col-sm-12">
+                {{ $datos->links() }}
+            </div>
+        </div>
+        </p>
     </div>
 </div>
+
 @endsection
