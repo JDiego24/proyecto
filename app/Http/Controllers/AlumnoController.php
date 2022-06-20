@@ -15,7 +15,7 @@ class AlumnoController extends Controller
     public function index()
     {
         //pagina de inicio
-        $datos = Alumno:: orderBy('id','asc')->paginate(10);
+        $datos = Alumno::orderBy('id', 'asc')->paginate(10);
         return view('registro', compact('datos'));
     }
 
@@ -38,6 +38,19 @@ class AlumnoController extends Controller
      */
     public function store(Request $request)
     {
+        //validaciones
+        $request->validate([
+            'Nombre' => 'required',
+            'Apellido_P' => 'required',
+            'Apellido_M' => 'required',
+            'Fecha_Nacimiento' => 'required |date| before:80 years',
+            'Telefono' => 'required | numeric',
+            'Matricula'=> 'required',
+            'Correo_Electronico'=> 'required | email | unique:alumnos',
+            'Curp'=> 'required',
+            'NSS' => 'required | numeric',
+            'Edad' => 'required |before:80 years'
+        ]);
         //sirve paara guardar datos en la base de datos
         $alumno = new Alumno();
         $alumno->Nombre = $request->post("Nombre");
@@ -66,7 +79,6 @@ class AlumnoController extends Controller
         //Sirve para obtener un solo registro de la tabla
         $alumno = Alumno::find($id);
         return view("eliminar", compact("alumno"));
-        
     }
 
     /**
