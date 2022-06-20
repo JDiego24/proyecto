@@ -11,25 +11,25 @@
             @csrf
             @method("PUT")
             <label for="">Nombre</label>
-            <input type="text" name="Nombre" class="form-control" required  value="{{ $alumno->Nombre }}">
+            <input style="text-transform:uppercase" type="text" name="Nombre" class="form-control" required  value="{{ $alumno->Nombre }}">
             <label for="">Apellido Paterno</label>
-            <input type="text" name="Apellido_P" class="form-control" required value="{{ $alumno->Apellido_P }}">
+            <input style="text-transform:uppercase" type="text" name="Apellido_P" class="form-control" required value="{{ $alumno->Apellido_P }}">
             <label for="">Apellido Materno</label>
-            <input type="text" name="Apellido_M" class="form-control" required value="{{ $alumno->Apellido_M }}">
+            <input style="text-transform:uppercase" type="text" name="Apellido_M" class="form-control" required value="{{ $alumno->Apellido_M }}">
             <label for="">Fecha de nacimiento</label>
-            <input type="date" name="Fecha_Nacimiento" class="form-control" required value="{{ $alumno->Fecha_Nacimiento }}">
+            <input style="text-transform:uppercase" type="date" name="Fecha_Nacimiento" class="form-control" required value="{{ $alumno->Fecha_Nacimiento }}">
             <label for="">Telefono</label>
-            <input type="integer" name="Telefono" class="form-control" required value="{{ $alumno->Telefono }}">
+            <input style="text-transform:uppercase" type="integer" name="Telefono" class="form-control" required value="{{ $alumno->Telefono }}">
             <label for="">Matricula</label>
-            <input type="text" name="Matricula" class="form-control" required value="{{ $alumno->Matricula }}">
+            <input style="text-transform:uppercase" type="text" name="Matricula" class="form-control" required value="{{ $alumno->Matricula }}">
             <label for="">Correo institucional</label>
-            <input type="text" name="Correo_Electronico" class="form-control" required value="{{ $alumno->Correo_Electronico }}">
+            <input style="text-transform:uppercase" type="text" name="Correo_Electronico" class="form-control" required value="{{ $alumno->Correo_Electronico }}">
             <label for="">CURP</label>
-            <input type="text" name="Curp" class="form-control" required value="{{ $alumno->Curp }}">
+            <input style="text-transform:uppercase" type="text" name="Curp" class="form-control" required value="{{ $alumno->Curp }}">
             <label for="">NSS</label>
-            <input type="text" name="NSS" class="form-control" required value="{{ $alumno->NSS }}">
+            <input style="text-transform:uppercase" type="text" name="NSS" class="form-control" required value="{{ $alumno->NSS }}">
             <label for="">Edad</label>
-            <input type="text" name="Edad" class="form-control" required value="{{ $alumno->Edad }}">
+            <input style="text-transform:uppercase" type="text" name="Edad" class="form-control" required value="{{ $alumno->Edad }}">
             <br>
             <a href="{{ route("alumnos.index") }}" class="btn btn-info" >
                 <span class="fas fa-undo-alt"></span> Regresar

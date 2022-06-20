@@ -40,9 +40,9 @@ class AlumnoController extends Controller
     {
         //validaciones
         $request->validate([
-            'Nombre' => 'required',
-            'Apellido_P' => 'required',
-            'Apellido_M' => 'required',
+            'Nombre' => 'required|alpha',
+            'Apellido_P' => 'required|alpha',
+            'Apellido_M' => 'required|alpha',
             'Fecha_Nacimiento' => 'required |date| before:80 years',
             'Telefono' => 'required | numeric',
             'Matricula'=> 'required',
