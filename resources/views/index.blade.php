@@ -48,9 +48,6 @@
                     <a href="" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Acerca de</a>
-                </li>
-                <li class="nav__items">
                     <a href="#" class="nav__links">Inicio de sesión</a>
                 </li>
                 <li class="nav__items">
@@ -68,7 +65,7 @@
         <section class="hero__container container">
             <h1 class="hero__title">Bienvenido al sistema de registro.</h1>
             <p class="hero__paragraph">Aqui podrás dar de alta tu información medica.</p>
-            <a href="#" class="cta">Comienza ahora</a>
+            <a href="{{ route('alumnos.create') }}" class="cta">Comienza ahora</a>
         </section>
     </header>
 
@@ -76,11 +73,13 @@
         <section class="knowledge">
             <div class="knowledge__container container">
                 <div class="knowledege__texts">
-                    <h2 class="subtitle">Área medica y psicopedagogica de la UTNay</h2>
-                    <p class="knowledge__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
-                        aliquam nemo in facere suscipit at delectus unde labore ad officia iste accusantium eaque
-                        aperiam laborum est voluptate totam? Modi, obcaecati?</p>
-                    <a href="#" class="cta">Iniciar sesión</a>
+                    <h2 class="subtitle">Área medica y psicopedagogica</h2>
+                    <p class="knowledge__paragraph">Entre los servicios que ofrece:
+                        <li>Atención medica y psicologica</li>
+                        <li>Fisioterapia</li>
+                        <li></li>
+                        <br>
+                    </p>
                 </div>
 
                 <figure class="knowledge__picture">
@@ -137,16 +136,15 @@
     <footer class="footer">
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.facebook.com/UTNAY" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 
-            <h3 class="footer__copyright">Derechos reservados &copy; Juan Diego González Miramontes</h3>
+            <h3 class="footer__copyright">&copy; 2022 Universidad Tecnológica de Nayarit. Derechos Reservados.</h3>
         </section>
     </footer>
     <script src="./js/questions.js"></script>
-   
+
 </body>
 
 </html>

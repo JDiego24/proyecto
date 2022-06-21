@@ -33,7 +33,6 @@
                         <td>{{ $alumno->Correo_Electronico }}</td>
                         <td>{{ $alumno->Curp }}</td>
                         <td>{{ $alumno->NSS }}</td>
-                        <td>{{ $alumno->Edad }}</td>
                     </tr>
                 </tbody>
             </table>

@@ -33,7 +33,6 @@
                     <th>Correo institucional</th>
                     <th>CURP</th>
                     <th>NSS</th>
-                    <th>Edad</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
                 </thead>
@@ -49,7 +48,6 @@
                         <td>{{ $item->Correo_Electronico }}</td>
                         <td>{{ $item->Curp }}</td>
                         <td>{{ $item->NSS }}</td>
-                        <td>{{ $item->Edad }}</td>
                         <td>
                             <form action="{{ route("alumnos.edit", $item->id) }}" method="GET">
                                 <button class="btn btn-warning btn-sm">

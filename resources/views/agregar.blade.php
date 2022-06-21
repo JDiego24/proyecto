@@ -85,13 +85,6 @@
             </small>
             @enderror
             <br>
-            <label for="">Edad</label>
-            <input type="text" name="Edad" class="form-control" id="Edad" value="{{ old('Edad') }}">
-            @error('Edad')
-            <small>
-                <strong>{{ $message }}</strong>
-            </small>
-            @enderror
             <br> <br>
             <a href="{{ route("alumnos.index") }}" class="btn btn-info">
                 <span class="fas fa-undo-alt"></span> Regresar

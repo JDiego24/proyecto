@@ -15,7 +15,7 @@ class AlumnoController extends Controller
     public function index()
     {
         //pagina de inicio
-        $datos = Alumno::orderBy('id', 'asc')->paginate(10);
+        $datos = Alumno::orderBy('Nombre', 'asc')->paginate(10);
         return view('registro', compact('datos'));
     }
 
@@ -43,13 +43,12 @@ class AlumnoController extends Controller
             'Nombre' => 'required|alpha',
             'Apellido_P' => 'required|alpha',
             'Apellido_M' => 'required|alpha',
-            'Fecha_Nacimiento' => 'required |date| before:80 years',
+            'Fecha_Nacimiento' => 'required |date| before:01/01/2006|after:01/01/1950',
             'Telefono' => 'required | numeric',
-            'Matricula'=> 'required',
+            'Matricula'=> 'required | alpha_dash | unique:alumnos',
             'Correo_Electronico'=> 'required | email | unique:alumnos',
-            'Curp'=> 'required',
+            'Curp'=> 'required | alpha_num',
             'NSS' => 'required | numeric',
-            'Edad' => 'required |before:80 years'
         ]);
         //sirve paara guardar datos en la base de datos
         $alumno = new Alumno();
@@ -62,7 +61,6 @@ class AlumnoController extends Controller
         $alumno->Correo_Electronico = $request->post("Correo_Electronico");
         $alumno->CURP = $request->post("Curp");
         $alumno->NSS = $request->post("NSS");
-        $alumno->Edad = $request->post("Edad");
         $alumno->save();
 
         return redirect()->route("alumnos.index")->with("success", "Agregado con exito");
@@ -114,7 +112,6 @@ class AlumnoController extends Controller
         $alumno->Correo_Electronico = $request->post("Correo_Electronico");
         $alumno->CURP = $request->post("Curp");
         $alumno->NSS = $request->post("NSS");
-        $alumno->Edad = $request->post("Edad");
         $alumno->save();
 
         return redirect()->route("alumnos.index")->with("success", "Actualizado con exito");

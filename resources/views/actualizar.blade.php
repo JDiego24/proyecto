@@ -28,8 +28,6 @@
             <input style="text-transform:uppercase" type="text" name="Curp" class="form-control" required value="{{ $alumno->Curp }}">
             <label for="">NSS</label>
             <input style="text-transform:uppercase" type="text" name="NSS" class="form-control" required value="{{ $alumno->NSS }}">
-            <label for="">Edad</label>
-            <input style="text-transform:uppercase" type="text" name="Edad" class="form-control" required value="{{ $alumno->Edad }}">
             <br>
             <a href="{{ route("alumnos.index") }}" class="btn btn-info" >
                 <span class="fas fa-undo-alt"></span> Regresar
