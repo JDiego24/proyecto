@@ -1,14 +1,13 @@
 /*Importación de la fuente*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001A49;
+    --color-title: #001a49;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-
+    font-family: "Poppins", sans-serif;
 }
 .container {
     width: 90%;
@@ -37,12 +36,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/reg.png');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+        url("../images/reg.png");
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
-
 
 /* Estilo del Nav */
 
@@ -86,11 +85,9 @@ body {
     width: 30px;
 }
 
-
 .nav__close {
     display: var(--show, none);
 }
-
 
 /* Hero container */
 
@@ -115,7 +112,7 @@ body {
 
 .cta {
     display: inline-block;
-    background-color: #2091F9;
+    background-color: #2091f9;
     justify-self: center;
     color: #fff;
     text-decoration: none;
@@ -135,7 +132,6 @@ body {
     margin-bottom: 25px;
 }
 
-
 .about__paragraph {
     line-height: 1.7;
 }
@@ -149,7 +145,6 @@ body {
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
-
 
 .about__icons {
     display: grid;
@@ -168,67 +163,64 @@ body {
 
 .knowledge {
     background-color: #e5e5f7;
-    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+        radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
 
-.knowledge__container{
+.knowledge__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     align-items: center;
 }
 
-.knowledge__picture{
+.knowledge__picture {
     max-width: 500px;
 }
 
-.knowledge__paragraph{
+.knowledge__paragraph {
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
-.knowledge__img{
+.knowledge__img {
     width: 100%;
     display: block;
 }
 
-/* price */
-
-.
-
 /* Questions */
 
-.questions{
+.questions {
     text-align: center;
 }
 
-.questions__container{
+.questions__container {
     display: grid;
     gap: 2em;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-.questions__padding{
+.questions__padding {
     padding: 0;
-    transition: padding .3s;
-    border: 1px solid #5454D4;
+    transition: padding 0.3s;
+    border: 1px solid #5454d4;
     border-radius: 6px;
 }
 
-.questions__padding--add{
+.questions__padding--add {
     padding-bottom: 30px;
 }
 
-.questions__answer{
+.questions__answer {
     padding: 0 30px 0;
     overflow: hidden;
 }
 
-.questions__title{
+.questions__title {
     text-align: left;
     display: flex;
     font-size: 20px;
@@ -238,7 +230,7 @@ body {
     justify-content: space-between;
 }
 
-.questions__arrow{
+.questions__arrow {
     border-radius: 50%;
     background-color: var(--color-title);
     width: 25px;
@@ -248,24 +240,24 @@ body {
     align-items: center;
     align-self: flex-end;
     margin-left: 10px;
-    transition:  transform .3s;
+    transition: transform 0.3s;
 }
 
-.questions__arrow--rotate{
+.questions__arrow--rotate {
     transform: rotate(180deg);
 }
 
-.questions__show{
+.questions__show {
     text-align: left;
     height: 0;
-    transition: height .3s;
+    transition: height 0.3s;
 }
 
-.questions__img{
+.questions__img {
     display: block;
 }
 
-.questions__copy{
+.questions__copy {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -273,22 +265,22 @@ body {
 
 /* Footer */
 
-.footer{
-    background-color: #1D293F;
+.footer {
+    background-color: #1d293f;
 }
 
-.footer__title{
+.footer__title {
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-.footer__title, .footer__newsletter{
+.footer__title,
+.footer__newsletter {
     color: #fff;
 }
 
-
-.footer__container{
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,7 +288,7 @@ body {
     padding-bottom: 60px;
 }
 
-.nav--footer{
+.nav--footer {
     padding-bottom: 20px;
     display: grid;
     gap: 1em;
@@ -304,20 +296,20 @@ body {
     height: 100%;
 }
 
-.nav__link--footer{
+.nav__link--footer {
     display: flex;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
 }
 
-.footer__inputs{
+.footer__inputs {
     margin-top: 10px;
     display: flex;
     overflow: hidden;
 }
 
-.footer__input{
+.footer__input {
     background-color: #fff;
     height: 50px;
     display: block;
@@ -329,12 +321,12 @@ body {
     margin-right: 16px;
 }
 
-.footer__submit{
+.footer__submit {
     margin-left: auto;
     display: inline-block;
     height: 50px;
-    padding: 0 20px ;
-    background-color: #2091F9;
+    padding: 0 20px;
+    background-color: #2091f9;
     border: none;
     font-size: 1rem;
     color: #fff;
@@ -342,32 +334,32 @@ body {
     cursor: pointer;
 }
 
-.footer__copy{
+.footer__copy {
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
 }
 
-.footer__copyright{
+.footer__copyright {
     font-weight: 300;
 }
 
-.footer__icons{
+.footer__icons {
     margin-bottom: 10px;
 }
 
-.footer__img{
+.footer__img {
     width: 30px;
 }
 
 /* Media queries */
 
-@media (max-width:800px){
-    .nav__menu{
+@media (max-width: 800px) {
+    .nav__menu {
         display: block;
     }
 
-    .nav__link--menu{
+    .nav__link--menu {
         position: fixed;
         background-color: #000;
         top: 0;
@@ -381,16 +373,16 @@ body {
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition: .7s opacity;
+        transition: 0.7s opacity;
     }
 
-    .nav__link--show{
+    .nav__link--show {
         --show: block;
-        opacity:1 ;
+        opacity: 1;
         pointer-events: unset;
     }
 
-    .nav__close{
+    .nav__close {
         position: absolute;
         top: 30px;
         right: 30px;
@@ -398,123 +390,119 @@ body {
         cursor: pointer;
     }
 
-    .hero__title{
+    .hero__title {
         font-size: 2.5rem;
     }
 
-
-    .about__main{
+    .about__main {
         gap: 2em;
     }
 
-    .about__icons:last-of-type{
+    .about__icons:last-of-type {
         grid-column: 1/-1;
     }
 
-
-    .knowledge__container{
+    .knowledge__container {
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
     }
 
-    .knowledge__picture{
+    .knowledge__picture {
         grid-row: 1/2;
         justify-self: center;
     }
 
-    .questions__copy{
+    .questions__copy {
         width: 100%;
     }
 
-    .footer__container{
+    .footer__container {
         flex-wrap: wrap;
     }
 
-    .nav--footer{
+    .nav--footer {
         width: 100%;
         justify-items: center;
     }
 
-    .nav__link--footer{
+    .nav__link--footer {
         width: 100%;
         justify-content: space-evenly;
         margin: 0;
     }
 
-    .footer__form{
+    .footer__form {
         width: 100%;
         justify-content: space-evenly;
     }
 
-    .footer__input{
+    .footer__input {
         flex: 1;
     }
-
 }
 
-@media (max-width:600px){
-    .hero__title{
+@media (max-width: 600px) {
+    .hero__title {
         font-size: 2rem;
     }
 
-    .hero__paragraph{
+    .hero__paragraph {
         font-size: 1rem;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 1.8rem;
     }
 
-    .testimony{
+    .testimony {
         --padding-container: 60px 0;
     }
 
-    .testimony__container{
+    .testimony__container {
         grid-template-columns: 28px 1fr 28px;
-        gap: .9em;
+        gap: 0.9em;
     }
 
-    .testimony__arrow{
+    .testimony__arrow {
         width: 100%;
     }
 
-    .testimony__course{
+    .testimony__course {
         margin-top: 15px;
     }
 
-    .questions__title{
+    .questions__title {
         font-size: 1rem;
     }
 
-    .footer__title{
+    .footer__title {
         justify-self: start;
         margin-bottom: 15px;
     }
 
-    .nav--footer{
+    .nav--footer {
         padding-bottom: 60px;
     }
 
-    .nav__link--footer{
+    .nav__link--footer {
         justify-content: space-between;
     }
 
-    .footer__inputs{
+    .footer__inputs {
         flex-wrap: wrap;
     }
 
-    .footer__input{
+    .footer__input {
         flex-basis: 100%;
         margin: 0;
         margin-bottom: 16px;
     }
 
-    .footer__submit{
+    .footer__submit {
         margin-right: auto;
         margin-left: 0;
-        
 
         /* 
         margin:0;
