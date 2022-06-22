@@ -40,7 +40,7 @@ class AlumnoController extends Controller
     {
         //validaciones
         $request->validate([
-            'Nombre' => 'required|alpha',
+            'Nombre' => 'required|regex:/^[\pL\s\-]+$/u',
             'Apellido_P' => 'required|alpha',
             'Apellido_M' => 'required|alpha',
             'Fecha_Nacimiento' => 'required |date| before:01/01/2006|after:01/01/1950',

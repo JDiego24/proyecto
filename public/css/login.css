@@ -37,7 +37,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background: #f56f3a;
+    background: #0b610b;
     border-radius: 50px;
 }
 .header2 {
@@ -53,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/reg.png);
+    background-image: url(../images/login.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

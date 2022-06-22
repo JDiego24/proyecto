@@ -72,7 +72,7 @@
     <main>
         <section class="knowledge">
             <div class="knowledge__container container">
-                <div class="knowledege__texts"> 
+                <div class="knowledege__texts">
                     <h2 class="subtitle">Área medica y psicopedagogica</h2>
                     <p class="knowledge__paragraph">Entre los servicios que ofrece:
                         <li>Atención medica y psicologica</li>
@@ -96,37 +96,46 @@
             <section class="questions__container">
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Qué documentos necesito?
+                        <h3 class="questions__title">¿Qué documentos necesito para el registro?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">5 de choclo</p>
+                        <p class="questions__show">Constancía de vigencia de derechos expedida por tu institución
+                            medica,
+                            matricula y correo institucional.
+                        </p>
                     </div>
                 </article>
 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Es necesario darme de alta?
+                        <h3 class="questions__title">¿Dónde se solicita la vigencia de derechos?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">Sí</p>
+                        <p class="questions__show">Ingresa al siguiente <a href="https://imss.gob.mx/imssdigital"
+                                target="_blank">enlace</a>
+                            Ahora tienes que hacer clic en la sección de vigencia de derechos y después pulsar en
+                            iniciar tramite.
+                            <br>
+                            <img src="../images/imss.png" alt="">
+                        </p>
                     </div>
                 </article>
-
+ 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿A dónde me tengo que dirigir?
+                        <h3 class="questions__title">¿A dónde me tengo que dirigir si tengo dudas?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">al área medica</p>
+                        <p class="questions__show">Al área medica, frente al gimnasio</p>
                     </div>
                 </article>
             </section>
@@ -136,7 +145,8 @@
     <footer class="footer">
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="https://www.facebook.com/UTNAY" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="https://www.facebook.com/UTNAY" class="footer__icons"><img src="./images/facebook.svg"
+                        class="footer__img"></a>
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 

@@ -13,7 +13,7 @@
 <header class="header2">
     <div class="wrapper">
         <nav>
-            <a href="{{ 'principal' }}" >Volver</a>
+            <a href="{{ '/' }}" >Volver</a>
         </nav>
     </div>
 </header>
