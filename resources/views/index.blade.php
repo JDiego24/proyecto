@@ -65,14 +65,14 @@
         <section class="hero__container container">
             <h1 class="hero__title">Bienvenido al sistema de registro.</h1>
             <p class="hero__paragraph">Aqui podrás dar de alta tu información medica.</p>
-            <a href="{{ route('alumnos.create') }}" class="cta">Comienza ahora</a>
+            <a href="{{ 'login' }}" class="cta">Comienza ahora</a>
         </section>
     </header>
 
     <main>
         <section class="knowledge">
             <div class="knowledge__container container">
-                <div class="knowledege__texts">
+                <div class="knowledege__texts"> 
                     <h2 class="subtitle">Área medica y psicopedagogica</h2>
                     <p class="knowledge__paragraph">Entre los servicios que ofrece:
                         <li>Atención medica y psicologica</li>
