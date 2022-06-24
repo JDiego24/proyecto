@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/crud.css">
+    <link rel="stylesheet" href="../css/login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +22,7 @@
             <form action="{{ route("alumnos.store") }}" method="POST">
                 @csrf
                 <label for="">Nombre</label>
-                <input type="text" name="Nombre" class="form-control" id="Nombre" value="{{ old('Nombre') }}">
+                <input style="text-transform:uppercase" type="text" name="Nombre" class="form-control" id="Nombre" value="{{ old('Nombre') }}">
                 @error('Nombre')
                 <small>
                     <strong>{{ $message }}</strong>
@@ -30,7 +30,7 @@
                 @enderror
                 <br>
                 <label for="">Apellido Paterno</label>
-                <input type="text" name="Apellido_P" class="form-control" id="Apellido_P" value="{{ old('Apellido_P') }}">
+                <input style="text-transform:uppercase" type="text" name="Apellido_P" class="form-control" id="Apellido_P" value="{{ old('Apellido_P') }}">
                 @error('Apellido_P')
                 <small>
                     <strong>{{ $message }}</strong>
@@ -38,7 +38,7 @@
                 @enderror
                 <br>
                 <label for="">Apellido Materno</label>
-                <input type="text" name="Apellido_M" class="form-control" id="Apellido_M" value="{{ old('Apellido_M') }}">
+                <input style="text-transform:uppercase" type="text" name="Apellido_M" class="form-control" id="Apellido_M" value="{{ old('Apellido_M') }}">
                 @error('Apellido_M')
                 <small>
                     <strong>{{ $message }}</strong>
@@ -63,7 +63,7 @@
                 @enderror
                 <br>
                 <label for="">Matricula</label>
-                <input type="text" name="Matricula" class="form-control" id="Matricula" value="{{ old('Matricula') }}">
+                <input style="text-transform:uppercase" type="text" name="Matricula" class="form-control" id="Matricula" value="{{ old('Matricula') }}">
                 @error('Matricula')
                 <small>
                     <strong>{{ $message }}</strong>
@@ -71,7 +71,7 @@
                 @enderror
                 <br>
                 <label for="">Correo institucional</label>
-                <input type="text" name="Correo_Electronico" class="form-control" id="Correo_Electronico"
+                <input style="text-transform:uppercase" type="text" name="Correo_Electronico" class="form-control" id="Correo_Electronico"
                     value="{{ old('Correo_Electronico') }}" placeholder="ejemplo@utnay.edu.mx">
                 @error('Correo_Electronico')
                 <small>
@@ -80,7 +80,7 @@
                 @enderror
                 <br>
                 <label for="">CURP</label>
-                <input type="text" name="Curp" class="form-control" id="Curp" value="{{ old('Curp') }}" >
+                <input style="text-transform:uppercase" type="text" name="Curp" class="form-control" id="Curp" value="{{ old('Curp') }}" >
                 @error('Curp')
                 <small>
                     <strong>{{ $message }} </strong>
@@ -95,7 +95,7 @@
                 </small>
                 @enderror
                 <br>
-                <br>
+                <br> <br>
                 <a href="{{ route("alumnos.index") }}" class="btn btn-info">
                     <span class="fas fa-undo-alt"></span> Regresar
                 </a>

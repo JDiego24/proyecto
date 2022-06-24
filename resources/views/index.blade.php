@@ -42,21 +42,6 @@
             <div class="nav__logo">
                 <h2 class="nav__title">Área medica</h2>
             </div>
-
-            <ul class="nav__link nav__link--menu">
-                <li class="nav__items">
-                    <a href="" class="nav__links">Inicio</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Inicio de sesión</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
-                </li>
-
-                <img src="./images/close.svg" class="nav__close">
-            </ul>
-
             <div class="nav__menu">
                 <img src="./images/menu.svg" class="nav__img">
             </div>
@@ -111,7 +96,7 @@
 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿Dónde se solicita la vigencia de derechos?
+                        <h3 class="questions__title">¿Cómo se solicita la vigencia de derechos?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
@@ -122,11 +107,14 @@
                             Ahora tienes que hacer clic en la sección de vigencia de derechos y después pulsar en
                             iniciar tramite.
                             <br>
-                            <img src="../images/imss.png" alt="">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/t5w7OYj9HlY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </p>
                     </div>
                 </article>
- 
+
                 <article class="questions__padding">
                     <div class="questions__answer">
                         <h3 class="questions__title">¿A dónde me tengo que dirigir si tengo dudas?
@@ -145,8 +133,8 @@
     <footer class="footer">
         <section class="footer__copy container">
             <div class="footer__social">
-                <a href="https://www.facebook.com/UTNAY" class="footer__icons"><img src="./images/facebook.svg"
-                        class="footer__img"></a>
+                <a href="https://www.facebook.com/UTNAY" class="footer__icons" target="_blank"><img
+                        src="./images/facebook.svg" class="footer__img"></a>
                 <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
             </div>
 
