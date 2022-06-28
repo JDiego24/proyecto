@@ -42,9 +42,6 @@
             <div class="nav__logo">
                 <h2 class="nav__title">Área medica</h2>
             </div>
-            <div class="nav__menu">
-                <img src="./images/menu.svg" class="nav__img">
-            </div>
         </nav>
 
         <section class="hero__container container">
@@ -55,28 +52,53 @@
     </header>
 
     <main>
-        <section class="knowledge">
-            <div class="knowledge__container container">
-                <div class="knowledege__texts">
-                    <h2 class="subtitle">Área medica y psicopedagogica</h2>
-                    <p class="knowledge__paragraph">Entre los servicios que ofrece:
-                        <li>Atención medica y psicologica</li>
-                        <li>Fisioterapia</li>
-                        <li></li>
-                        <br>
-                    </p>
-                </div>
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
 
-                <figure class="knowledge__picture">
-                    <img src="../images/mano.jpg" class="knowledge__img">
-                </figure>
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Atención medica</span></h2>
+                        <p class="testimony__review">Puedes acusir en caso de presentar malestares fisicos donde serás
+                            atentido por profesional medico.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Orientación psicopedagogica</h2>
+                        <p class="testimony__review">Puedes acudir en caso de presentar malestares emocionales donde se
+                            te brindará el seguimiento necesario.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face2.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Fisioterapia</h2>
+                        <p class="testimony__review">Puedes ocudir en caso de presentar malestares fisicos, el área
+                            cuenta con el equipo necesario para brindarte tratamiento para tu pronta recuperación.</p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/face3.png" class="testimony__img">
+                    </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
             </div>
         </section>
 
         <section class="questions container">
             <h2 class="subtitle">Preguntas frecuentes</h2>
-            <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
-                doloribus neque perspiciatis sapiente fuga.</p>
+            <p class="questions__paragraph"></p>
 
             <section class="questions__container">
                 <article class="questions__padding">
@@ -102,11 +124,9 @@
                             </span>
                         </h3>
 
-                        <p class="questions__show">Ingresa al siguiente <a href="https://imss.gob.mx/imssdigital"
-                                target="_blank">enlace</a>
-                            Ahora tienes que hacer clic en la sección de vigencia de derechos y después pulsar en
-                            iniciar tramite.
-                            <br>
+                        <p class="questions__show">A continuación, te dejamos un tutorial para que sea más facil la
+                            realización de tu tramite. puedes realizarlo desde el siguiente <a
+                                href="https://imss.gob.mx/imssdigital" target="_blank">enlace</a>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/t5w7OYj9HlY"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -117,13 +137,20 @@
 
                 <article class="questions__padding">
                     <div class="questions__answer">
-                        <h3 class="questions__title">¿A dónde me tengo que dirigir si tengo dudas?
+                        <h3 class="questions__title">¿Cómo se solicita el número de seguro social?
                             <span class="questions__arrow">
                                 <img src="./images/arrow.svg" class="questions__img">
                             </span>
                         </h3>
 
-                        <p class="questions__show">Al área medica, frente al gimnasio</p>
+                        <p class="questions__show">A continuación, te dejamos un tutorial para que sea más facil la
+                            realización de tu tramite. puedes realizarlo desde el siguiente <a
+                                href="https://imss.gob.mx/imssdigital" target="_blank">enlace</a>
+                            <iframe  width="560" height="315" src="https://www.youtube.com/embed/SB-rIg8QyV8"
+                                title="Obtén tu Número de Seguridad Social con la app IMSS Digital" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </p>
                     </div>
                 </article>
             </section>
@@ -142,6 +169,7 @@
         </section>
     </footer>
     <script src="./js/questions.js"></script>
+    <script src="./js/slider.js"></script>
 
 </body>
 
