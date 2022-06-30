@@ -19,7 +19,7 @@
             <p class="card-text">
             <div class="alert alert-danger" role="alert">
                 ¿Quiere eliminar este registro?
-                <table class="table table-sm table-hover table-bordered" style="background-color: white">
+                <table class="table table-sm table-bordered table-hover border-dark" style="background-color: white">
                     <thead>
                         <th>Nombre</th>
                         <th>Apellido Paterno</th>
@@ -30,7 +30,6 @@
                         <th>Correo institucional</th>
                         <th>CURP</th>
                         <th>NSS</th>
-                        <th>Edad</th>
                     </thead>
                     <tbody>
                         <tr>

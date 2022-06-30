@@ -6,6 +6,7 @@
 <br><br>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../css/crud.css">
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <div class="card">
         <h5 class="card-header">Registro de alumnos</h5>
@@ -25,14 +27,16 @@
                 </div>
             </div>
             <h5 class="card-title text-center">Listado de alumnos en el sistema</h5>
-            <p>
-                <a href="{{ route("alumnos.create") }}" class="btn btn-primary">
-                    <span class="fas fa-user-plus"></span> Agregar nuevo alumno</a>
-            </p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Busqueda de alumno" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button">Buscar</button>
+                </div>
+              </div>
             <hr>
             <p class="card-text">
             <div class="table table-responsive">
-                <table class="table table-sm table-bordered">
+                <table class="table table-sm table-bordered table-hover border-dark">
                     <thead>
                         <th>Nombre</th>
                         <th>Apellido Paterno</th>
@@ -46,6 +50,7 @@
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </thead>
+                    
                     <tbody>
                         @foreach ($datos as $item)
                         <tr>
@@ -75,10 +80,9 @@
                         </tr>
                         @endforeach
                     </tbody>
-                    </tbody>
+                    </tbody>                    
                 </table>
                 <hr>
-    
             </div>
             <div class="row">
                 <div class="col-sm-12">
@@ -86,10 +90,15 @@
                 </div>
             </div>
             </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="{{ route("alumnos.create") }}" class="btn btn-outline-primary">
+                    <span class="fas fa-user-plus"></span> Agregar nuevo alumno</a>
+              </div>
         </div>
     </div>
 </body>
+
 </html>
-    
+
 
 @endsection
