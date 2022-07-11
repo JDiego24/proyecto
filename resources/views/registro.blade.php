@@ -27,11 +27,11 @@
                 </div>
             </div>
             <h5 class="card-title text-center">Listado de alumnos en el sistema</h5>
-            <form action="{{ route('alumnos.index') }}" method="POST">
+            <form action="{{ route('alumnos.index') }}" method="get">
                 <div class="input-group mb-3">
-                    <input  value="" name="texto" type="text" class="form-control" placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input name="texto" value="{{ $texto }}" type="text" class="form-control" placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-primary" type="button">Buscar</button>
+                      <button class="btn btn-outline-primary" type="submit">Buscar</button>
                     </div>
                   </div>
             </form>
@@ -53,6 +53,11 @@
                         <th>Eliminar</th>
                     </thead>
                     <tbody>
+                        @if(count($datos)<=0)
+                        <tr> 
+                            <td colspan="8">No hay resultados</td>
+                        </tr>
+                        @else
                         @foreach ($datos as $item)
                         <tr>
                             <td>{{ $item->Nombre }}</td>
@@ -80,6 +85,7 @@
                             </td>
                         </tr>
                         @endforeach
+                        @endif
                     </tbody>
                     </tbody>                    
                 </table>
@@ -98,8 +104,5 @@
         </div>
     </div>
 </body>
-
 </html>
-
-
 @endsection

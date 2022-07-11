@@ -15,13 +15,13 @@ class AlumnoController extends Controller
      */
     public function index(Request $request)
     {
-        $texto=trim($request->get('texto'));
+        //pagina de inicio
+        $texto = $request->get('texto');
         $datos=DB::table('alumno')
                     ->select('Nombre','Apellido_P', 'Apellido_M', 'Fecha_Nacimiento', 'Telefono', 'Matricula', 'Correo_Eletronico','Curp','NSS')
                     ->where('matricula','LIKE','%'.$texto.'%');
-        //pagina de inicio
         $datos = Alumno::orderBy('Nombre', 'asc')->paginate(10);
-        return view('registro', compact('datos'));
+            return view('registro', compact('datos','texto'));
     }
 
     /**
