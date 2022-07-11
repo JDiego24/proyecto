@@ -16,7 +16,7 @@ class AlumnoController extends Controller
     public function index(Request $request)
     {
         $texto=trim($request->get('texto'));
-        $alumno=DB::table('alumno')
+        $datos=DB::table('alumno')
                     ->select('Nombre','Apellido_P', 'Apellido_M', 'Fecha_Nacimiento', 'Telefono', 'Matricula', 'Correo_Eletronico','Curp','NSS')
                     ->where('matricula','LIKE','%'.$texto.'%');
         //pagina de inicio

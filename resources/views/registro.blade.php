@@ -29,7 +29,7 @@
             <h5 class="card-title text-center">Listado de alumnos en el sistema</h5>
             <form action="{{ route('alumnos.index') }}" method="POST">
                 <div class="input-group mb-3">
-                    <input  value="{{$texto}}" name="texto" type="text" class="form-control" placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input  value="" name="texto" type="text" class="form-control" placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                       <button class="btn btn-outline-primary" type="button">Buscar</button>
                     </div>
@@ -52,7 +52,6 @@
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </thead>
-                    
                     <tbody>
                         @foreach ($datos as $item)
                         <tr>
