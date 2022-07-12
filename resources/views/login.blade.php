@@ -98,7 +98,7 @@
             </small>
             @enderror
             <br>
-            <button> Registrarse</button>
+            <button name="btlogin"> Registrarse</button>
         </form>
     </div>
     <div class="container-form sign-in">

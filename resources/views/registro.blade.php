@@ -34,7 +34,7 @@
                       <button class="btn btn-outline-primary" type="submit">Buscar</button>
                     </div>
                     <div class="input-group-append">
-                        <a href="{{ route("alumnos.index") }}" class="btn btn-outline-primary">Regresar</a>
+                        <a href="{{ route("alumnos.index") }}" class="btn btn-outline-primary">Limpiar</a>
                       </div>
                   </div>
             </form>
@@ -58,7 +58,7 @@
                     <tbody>
                         @if(count($datos)<=0)
                         <tr> 
-                            <td colspan="8">No hay resultados</td>
+                            <td colspan="11">No hay resultados</td>
                         </tr>
                         @else
                         @foreach ($datos as $item)

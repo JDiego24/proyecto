@@ -54,9 +54,10 @@ class AlumnoController extends Controller
             'Matricula'=> 'required | alpha_dash | unique:alumnos',
             'Correo_Electronico'=> 'required | email | unique:alumnos',
             'Curp'=> 'required | alpha_num',
-            'NSS' => 'required | numeric',
+            'NSS' => 'required | numeric | max:99999999999',
         ]);
-        //sirve paara guardar datos en la base de datos
+        //sirve para guardar datos en la base de datos
+        
         $alumno = new Alumno();
         $alumno->Nombre = $request->post("Nombre");
         $alumno->Apellido_P = $request->post("Apellido_P");
