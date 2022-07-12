@@ -33,6 +33,9 @@
                     <div class="input-group-append">
                       <button class="btn btn-outline-primary" type="submit">Buscar</button>
                     </div>
+                    <div class="input-group-append">
+                        <a href="{{ route("alumnos.index") }}" class="btn btn-outline-primary">Regresar</a>
+                      </div>
                   </div>
             </form>
             <hr>
@@ -93,7 +96,6 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    {{ $datos->links() }}
                 </div>
             </div>
             </p>

@@ -59,7 +59,7 @@
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
                         <h2 class="subtitle">Atención medica</span></h2>
-                        <p class="testimony__review">Puedes acusir en caso de presentar malestares fisicos donde serás
+                        <p class="testimony__review">Puedes acudir en caso de presentar malestares fisicos donde serás
                             atentido por profesional medico.</p>
                     </div>
 
@@ -126,7 +126,7 @@
 
                         <p class="questions__show">A continuación, te dejamos un tutorial para que sea más facil la
                             realización de tu tramite. puedes realizarlo desde el siguiente <a
-                                href="https://imss.gob.mx/imssdigital" target="_blank">enlace</a>
+                                href="https://imss.gob.mx/imssdigital" target="_blank">enlace.</a> Desde aquí sabrás si tienes seguro o no.
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/t5w7OYj9HlY"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
