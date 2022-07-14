@@ -21,6 +21,9 @@ return view('index');
 route::get('/login',function(){
     return view('login');
 });
+route::get('/consulta',function(){
+    return view('consulta');
+});
 Route::get('/registro',[AlumnoController::class,'index'])->name('alumnos.index');
 Route::get('/create',[AlumnoController::class,'create'])->name('alumnos.create');
 Route::get('/edit/{id}',[AlumnoController::class,'edit'])->name('alumnos.edit');

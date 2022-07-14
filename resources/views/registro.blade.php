@@ -88,7 +88,7 @@
                                 </form>
                             </td>
                             <td>
-                                <form action="{{ route("alumnos.show", $item->id) }}" method="GET">
+                                <form action="{{ "consulta"}}" method="GET">
                                     <button class="btn btn-outline-success">
                                         <span class="fa fa-user-md"></span>
                                     </button>

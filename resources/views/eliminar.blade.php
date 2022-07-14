@@ -1,6 +1,6 @@
 @extends('layout/plantilla')
 
-@section("tituloPagina","Crear nuevo registro")
+@section("tituloPagina","Eliminar")
 
 @section('contenido')
 <!DOCTYPE html>
