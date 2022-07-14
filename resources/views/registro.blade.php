@@ -54,7 +54,6 @@
                         <th>NSS</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
-                        <th>Consulta</th>
                     </thead>
                     <tbody>
                         @if(count($datos)<=0)
@@ -84,13 +83,6 @@
                                 <form action="{{ route("alumnos.show", $item->id) }}" method="GET">
                                     <button class="btn btn-outline-danger">
                                         <span class="fas fa-user-times"></span>
-                                    </button>
-                                </form>
-                            </td>
-                            <td>
-                                <form action="{{ "consulta"}}" method="GET">
-                                    <button class="btn btn-outline-success">
-                                        <span class="fa fa-user-md"></span>
                                     </button>
                                 </form>
                             </td>
