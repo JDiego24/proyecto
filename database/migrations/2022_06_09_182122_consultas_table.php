@@ -13,7 +13,14 @@ class ConsultasTable extends Migration
      */
     public function up()
     {
-           
+        Schema::create('consultas', function (Blueprint $table){
+            $table->id();
+            $table->string('Nombre');
+            $table->string('Area');
+            $table->string('Comentario');
+            $table->string('Matricula');
+            $table->timestamps();
+        });
     }
 
     /**
