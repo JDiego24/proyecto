@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Consultas extends Model
 {
     use HasFactory;
+    public $fillable = ['Nombre','Area', 'Matricula','Comentario'];
 }
