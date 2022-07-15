@@ -61,15 +61,14 @@
                 <textarea name="" id="" cols="100" rows="10"></textarea>
                 <br>
                 <br> <br>
-                <a href="{{ route("alumnos.index") }}" class="btn btn-info">
-                    <span class="fas fa-undo-alt"></span> Regresar
+                <a href="{{ ('consulta') }}" class="btn btn-outline-success">
+                    <span class="fa fa-heartbeat"></span> Regresar
                 </a>
-                <button class="btn btn-primary">
+                <button class="btn btn-outline-success">
                     <span class="fas fa-user-plus"></span> Agregar
                 </button>
             </form>
             </p>
-    
         </div>
     </div>
 </body>

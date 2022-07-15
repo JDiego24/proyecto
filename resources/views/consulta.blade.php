@@ -22,23 +22,26 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     @if ($mensaje= Session::get("success"))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert"> <strong>{{ $mensaje }}</strong>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert"> <strong>{{ $mensaje
+                            }}</strong>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
+                    </div>
                     @endif
                 </div>
             </div>
             <h5 class="card-title text-center">Listado de consultas en el sistema</h5>
             <form action="" method="get">
                 <div class="input-group mb-3">
-                    <input name="texto" value="" type="text" class="form-control" placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input name="texto" value="" type="text" class="form-control"
+                        placeholder="Busqueda de alumno por matricula" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                      <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                        <button class="btn btn-outline-primary" type="submit">Buscar</button>
                     </div>
                     <div class="input-group-append">
                         <a href="" class="btn btn-outline-primary">Limpiar</a>
-                      </div>
-                  </div>
+                    </div>
+                </div>
             </form>
             <hr>
             <p class="card-text">
@@ -58,7 +61,7 @@
                             <td></td>
                         </tr>
                     </tbody>
-                    </tbody>                    
+                    </tbody>
                 </table>
                 <hr>
             </div>
@@ -67,12 +70,14 @@
                 </div>
             </div>
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="{{ route("alumnos.create") }}" class="btn btn-outline-primary">
-                    <span class="fas fa-user-plus"></span> Crear nueva consulta</a>
-              </div>
+            <a href="{{ route("alumnos.index") }}" class="btn btn-outline-info">
+                <span class="fa fa-users"></span> Alumnos
+            </a>
+            <a href="{{ ('crear') }}" class="btn btn-outline-success">
+                <span class="fa fa-medkit"></span> Crear nueva consulta</a>
         </div>
     </div>
 </body>
+
 </html>
 @endsection

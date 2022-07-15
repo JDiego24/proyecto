@@ -101,10 +101,11 @@
                 </div>
             </div>
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="{{ route("alumnos.create") }}" class="btn btn-outline-primary">
-                    <span class="fas fa-user-plus"></span> Agregar nuevo alumno</a>
-              </div>
+            <a href="{{ ('consulta') }}" class="btn btn-outline-success">
+                <span class="fa fa-heartbeat"></span> Consultas
+            </a>
+            <a href="{{ route("alumnos.create") }}" class=" btn btn-outline-info">
+                <span class="fa fa-medkit"></span>Agregar nuevo alumno</a>
         </div>
     </div>
 </body>

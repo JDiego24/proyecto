@@ -24,7 +24,7 @@ route::get('/login', function () {
 route::get('/consulta', function () {
     return view('consulta');
 });
-route::get('/create', function () {
+route::get('/crear', function () {
     return view('create');
 });
 
