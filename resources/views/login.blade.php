@@ -33,6 +33,14 @@
         <form action="{{ route("alumnos.store") }}" method="POST" class="formulario2">
             @csrf
             <h2 class="create-account">Registro de estudiantes</h2>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    @if ($mensaje= Session::get("success"))
+                    <div class="alert alert-success" role="alert"> <strong>{{ $mensaje }}</strong>
+                        </div>
+                    @endif
+                </div>
+            </div>
             <input type="text" name="Nombre" placeholder="Nombre" id="Nombre" value="{{ old('Nombre') }}">
             @error('Nombre')
             <small>
@@ -40,22 +48,24 @@
             </small>
             @enderror
             <br>
-            <input type="text" name="Apellido_P" placeholder="Apellido paterno" id="Apellido_P" value="{{ old('Apellido_P') }}">
+            <input type="text" name="Apellido_P" placeholder="Apellido paterno" id="Apellido_P"
+                value="{{ old('Apellido_P') }}">
             @error('Apellido_P')
             <small>
                 <strong>{{ $message }}</strong>
             </small>
             @enderror
             <br>
-            <input type="text" name="Apellido_M" placeholder="Apellido materno" id="Apellido_M" value="{{ old('Apellido_M') }}">
+            <input type="text" name="Apellido_M" placeholder="Apellido materno" id="Apellido_M"
+                value="{{ old('Apellido_M') }}">
             @error('Apellido_M')
             <small>
                 <strong>{{ $message }}</strong>
             </small>
             @enderror
             <br>
-            <input type="date" name="Fecha_Nacimiento" placeholder="Fecha de nacimiento" id="Fecha_Nacimiento" value="{{ old("
-                Fecha_Nacimiento") }}">
+            <input type="date" name="Fecha_Nacimiento" placeholder="Fecha de nacimiento" id="Fecha_Nacimiento"
+                value="{{ old(" Fecha_Nacimiento") }}">
             @error('Fecha_Nacimiento')
             <small>
                 <strong>{{ $message }}</strong>

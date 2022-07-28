@@ -15,6 +15,7 @@ class AlumnoController extends Controller
      */
     public function index(Request $request)
     {
+        $datos=Alumno::paginate(10);
         //pagina de inicio
         if($request){
             $texto = trim($request->get('texto'));
@@ -70,7 +71,8 @@ class AlumnoController extends Controller
         $alumno->NSS = $request->post("NSS");
         $alumno->save();
 
-        return redirect()->route("alumnos.index")->with("success", "Agregado con exito");
+        return redirect('/login')->with("success", "Agregado con exito");
+        //return redirect()->route('login')->with("success", "Agregado con exito");
     }
 
     /**
